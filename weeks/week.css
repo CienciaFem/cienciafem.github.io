@@ -12,31 +12,8 @@ body {
     padding: 0;
 }
 
-.column_big {
-    float: left;
-    width: 70%;
-}
-
-@media screen and (max-width: 600px) {
-    .column_big {
-      width: 100%;
-    }
-}
-
-.column_small {
-    float: left;
-    width: 28%;
-    margin-left: 2%;
-}
-
-@media screen and (max-width: 600px) {
-    .column_small {
-      width: 100%;
-    }
-}
-
 .title {
-    font-size: 120%;
+    font-size: 100%;
     font-weight: 700;
     text-align: center;
     float: center;
@@ -210,8 +187,8 @@ body {
 }
 
 .week_img {
-    width: 15%;
-    height: 15%;
+    width: 100%;
+    height: 100%;
     margin-top: 1%;
     margin-left: 1%;
     margin-right: 0%;
@@ -222,10 +199,10 @@ body {
 }
 
 .week_title {
-    font-size: 150%;
+    font-size: 110%;
     font-weight: 700;
     float: center;
-    margin-top: 1%;
+    margin-top: 0%;
     margin-left: 4%;
     margin-right: 20%;
     margin-bottom: 0%;
@@ -235,8 +212,9 @@ body {
 .week_date {
     font-size: 80%;
     font-weight: 700;
+    min-width: 600px;
     float: center;
-    margin-top: 1%;
+    margin-top: 0%;
     margin-left: 4%;
     margin-right: 20%;
     margin-bottom: 0%;
@@ -246,7 +224,7 @@ body {
 .week_profe {
     font-size: 120%;
     font-weight: 700;
-    margin-top: 1%;
+    margin-top: 0%;
     margin-left: 4%;
     margin-right: 4%;
     margin-bottom: 0%;
@@ -259,6 +237,138 @@ body {
     margin-top: 0%;
     margin-left: 4%;
     margin-right: 4%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     color: rgb(43, 41, 43);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    margin-left: 3%;
+}
+
+.l {
+    float: left;
+    width: 15%;
+    margin-top: 1%;
+}
+
+.r {
+    float: left;
+    width: 75%;
+    margin-top: 1%;
+    margin-left: -2%;
+    margin-bottom: 1%;
+}
+
+@media screen and (max-width: 900px) {
+    .week_box {
+        width: 90%;
+        margin: auto;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        background-color: rgb(185, 177, 185);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+        font-size: 80%;
+    }
+
+    .week_button {
+        width: 100%;
+        height: 100%;
+        margin: 2% auto;
+        background-color: rgb(147, 110, 148);
+        border: 2px solid rgb(91, 60, 92);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 75%;
+        margin-top: 0.5%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 0.5%;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0 0 5px 0 rgb(25, 105, 88);
+    }
+
+    .week_img {
+        width: 25%;
+        height: 25%;
+        margin-top: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        border-radius: 5%;
+        border: 2px solid rgb(91, 60, 92);
+        border-radius: 5px;
+    }
+
+    .week_title {
+        font-size: 100%;
+        font-weight: 700;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        color: rgb(69, 11, 71);
+    }
+
+    .week_date {
+        font-size: 80%;
+        font-weight: 700;
+        margin-top: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        color: rgb(73, 65, 73);
+    }
+
+    .week_profe {
+        font-size: 120%;
+        font-weight: 700;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        color: rgb(54, 48, 54);
+    }
+
+    .week_description {
+        font-weight: 700;
+        margin-top: 0%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 0%;
+        color: rgb(43, 41, 43);
+    }
+
+    .column {
+        float: center;
+        padding: 10px;
+    }
+    
+    .l {
+        float:center;
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    
+    .r {
+        float: center;
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 0%;
+    }    
 }
