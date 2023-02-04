@@ -44,25 +44,6 @@ body {
     border-radius: 5%;
 }
 
-@media screen and (max-width: 600px) {
-    .interview_img {
-        width: 30%;
-        height: 30%;
-        border-radius: 10px;
-        border: 2px solid rgb(103, 65, 136);
-        border-radius: 5px;
-    }
-    .column_img {
-      width: 100%;
-      float: center;
-      margin-top: 0%;
-      margin-left: 20%;
-      margin-right: 20%;
-      margin-bottom: 2%;
-      border-radius: 5%;
-    }
-}
-
 .interview_title {
     font-size: 150%;
     font-weight: 700;
@@ -93,38 +74,6 @@ body {
     margin-right: 0%;
     margin-bottom: 2%;
     border-radius: 5%;
-}
-
-@media screen and (max-width: 600px) {
-    .interview_title {
-        font-size: 150%;
-        font-weight: 700;
-        float: center;
-        margin-top: 1%;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-bottom: 0%;
-        color: rgb(103, 65, 136);
-    }
-    .interview_description {
-        font-size: 75%;
-        font-weight: 600;
-        float: center;
-        margin-top: 1%;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-bottom: 0%;
-        color: rgb(0, 0, 0);
-    }
-    .column_title {
-      width: 100%;
-      float: center;
-      margin-top: 0%;
-      margin-left: 0%;
-      margin-right: 0%;
-      margin-bottom: 2%;
-      border-radius: 5%;
-    }
 }
 
 .interview_date {
@@ -268,25 +217,117 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .week_box {
-        width: 90%;
-        margin: auto;
+    .title {
+        font-size: 150%;
+        font-weight: 700;
+        text-align: center;
+        float: center;
         margin-top: 0%;
-        margin-bottom: 0%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+        font-weight: ExtraBold;
+        font-variant: small-caps;
+    }
+    
+    .interview_img {
+        width: 100%;
+        height: 100%;
         border-radius: 10px;
+        border: 5px solid rgb(103, 65, 136);
+        border-radius: 5px;
+    }
+    
+    .column_img {
+        float: left;
+        width: 20%;
+        margin-top: 1%;
+        margin-left: 10%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        border-radius: 5%;
+    }
+
+    .interview_title {
+        font-size: 100%;
+        font-weight: 700;
+        float: center;
+        margin-top: 1%;
+        margin-left: 4%;
+        margin-right: 10%;
+        margin-bottom: 0%;
+        color: rgb(103, 65, 136);
+    }
+    
+    .column_title {
+        float: left;
+        width: 65%;
+        margin-top: 0%;
+        margin-left: 2%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        border-radius: 5%;
+    }
+    
+    .interview_description {
+        font-size: 50%;
+        font-weight: 600;
+        float: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        text-justify: inter-word;
+        margin-top: 20%;
+        margin-left: -32%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+        color: rgb(0, 0, 0);
+    }
+
+    .interview_date {
+        font-size: 40%;
+        font-weight: 700;
+        float: center;
+        margin-top: 20%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 1%;
+        color: rgb(73, 65, 73);
+    }
+    
+    .interview_body {
+        font-size: 45%;
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 1.4;
+        float: center;
+        justify-content: right;
+        margin-top: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        padding: 0%;
+    }
+
+    .week_box {
+        width: 88%;
+        margin-top: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 0%;
+        border-radius: 15px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 40px;
-        font-size: 80%;
+        padding: 5%;
     }
 
     .week_button {
         width: 100%;
         height: 100%;
-        margin: 2% auto;
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -301,8 +342,8 @@ body {
     }
 
     .week_img {
-        width: 25%;
-        height: 25%;
+        width: 15%;
+        height: 15%;
         margin-top: 1%;
         margin-left: 0%;
         margin-right: 0%;
@@ -318,6 +359,10 @@ body {
         margin-left: 0%;
         margin-right: 0%;
         margin-bottom: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .week_date {
@@ -327,21 +372,36 @@ body {
         margin-left: 0%;
         margin-right: 0%;
         margin-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .week_profe {
         font-size: 120%;
         font-weight: 700;
-        margin-top: 0%;
+        margin-top: -2%;
         margin-bottom: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .week_description {
+        font-size: 80%;
         font-weight: 700;
         margin-top: 0%;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 25%;
+        margin-right: 25%;
         margin-bottom: 0%;
+        float: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     .column {

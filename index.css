@@ -21,7 +21,6 @@ body {
     margin-right: 10%;
     margin-bottom: 0%;
     color: rgb(103, 65, 136);
-    font-weight: ExtraBold;
     font-variant: small-caps;
 }
 
@@ -38,7 +37,8 @@ body {
 
 .title_description {
     font-size: 65%;
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
     margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
@@ -130,6 +130,8 @@ body {
 .week_description {
     font-size: 100%;
     font-weight: 700;
+    text-align: justify;
+    text-justify: inter-word;
     margin-top: 0%;
     margin-left: 4%;
     margin-right: 4%;
@@ -164,25 +166,67 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .week_box {
-        width: 90%;
-        margin: auto;
-        margin-top: 0%;
+    .title {
+        font-size: 150%;
+        font-weight: 700;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 8%;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 0%;
-        border-radius: 10px;
+        font-variant: small-caps;
+    }
+    
+    .subtitle {
+        font-size: 70%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 0%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 0%;
+        color: rgb(0, 0, 0);
+        font-weight: Bold;
+    }
+    
+    .title_description {
+        font-size: 55%;
+        text-align: justify;
+        text-justify: inter-word;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 3%;
+        color: rgb(0, 0, 0);
+        font-weight: Bold;
+    }
+
+    .week_box {
+        width: 88%;
+        margin-top: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 0%;
+        border-radius: 15px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 40px;
-        font-size: 80%;
+        padding: 5%;
     }
 
     .week_button {
         width: 100%;
         height: 100%;
-        margin: 2% auto;
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -197,8 +241,8 @@ body {
     }
 
     .week_img {
-        width: 25%;
-        height: 25%;
+        width: 15%;
+        height: 15%;
         margin-top: 1%;
         margin-left: 0%;
         margin-right: 0%;
@@ -214,6 +258,10 @@ body {
         margin-left: 0%;
         margin-right: 0%;
         margin-bottom: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .week_date {
@@ -223,21 +271,36 @@ body {
         margin-left: 0%;
         margin-right: 0%;
         margin-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .week_profe {
         font-size: 120%;
         font-weight: 700;
-        margin-top: 0%;
+        margin-top: -2%;
         margin-bottom: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .week_description {
+        font-size: 80%;
         font-weight: 700;
         margin-top: 0%;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 25%;
+        margin-right: 25%;
         margin-bottom: 0%;
+        float: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     .column {
