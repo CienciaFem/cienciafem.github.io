@@ -7,7 +7,7 @@ body {
     font-size: xx-large;
     line-height: 1.5;
     color: rgb(0, 0, 0);
-    background-color: rgb(252, 242, 255);
+    background-color: rgb(255, 251, 245);
     margin: 0;
     padding: 0;
 }
@@ -20,7 +20,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 0%;
-    color: rgb(106, 19, 109);
+    color: rgb(103, 65, 136);
     font-weight: ExtraBold;
     font-variant: small-caps;
 }
@@ -54,7 +54,7 @@ body {
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 0%;
-    background-color: rgb(185, 177, 185);
+    background-color: rgb(247, 239, 229);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -66,8 +66,8 @@ body {
     width: 100%;
     height: 100%;
     margin: 2% auto;
-    background-color: rgb(147, 110, 148);
-    border: 2px solid rgb(91, 60, 92);
+    background-color: rgb(192, 172, 208);
+    border: 2px solid rgb(103, 65, 136);
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -90,7 +90,7 @@ body {
     margin-right: 0%;
     margin-bottom: 1%;
     border-radius: 5%;
-    border: 2px solid rgb(91, 60, 92);
+    border: 2px solid rgb(103, 65, 136);
     border-radius: 5px;
 }
 
@@ -102,7 +102,7 @@ body {
     margin-left: 4%;
     margin-right: 20%;
     margin-bottom: 0%;
-    color: rgb(69, 11, 71);
+    color: rgb(103, 65, 136);
 }
 
 .week_date {
@@ -169,7 +169,6 @@ body {
         margin: auto;
         margin-top: 0%;
         margin-bottom: 0%;
-        background-color: rgb(185, 177, 185);
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -184,8 +183,6 @@ body {
         width: 100%;
         height: 100%;
         margin: 2% auto;
-        background-color: rgb(147, 110, 148);
-        border: 2px solid rgb(91, 60, 92);
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -197,7 +194,6 @@ body {
         margin-bottom: 0.5%;
         text-align: center;
         cursor: pointer;
-        box-shadow: 0 0 5px 0 rgb(25, 105, 88);
     }
 
     .week_img {
@@ -208,7 +204,6 @@ body {
         margin-right: 0%;
         margin-bottom: 0%;
         border-radius: 5%;
-        border: 2px solid rgb(91, 60, 92);
         border-radius: 5px;
     }
 
@@ -219,7 +214,6 @@ body {
         margin-left: 0%;
         margin-right: 0%;
         margin-bottom: 0%;
-        color: rgb(69, 11, 71);
     }
 
     .week_date {
@@ -229,7 +223,6 @@ body {
         margin-left: 0%;
         margin-right: 0%;
         margin-bottom: 2%;
-        color: rgb(73, 65, 73);
     }
 
     .week_profe {
@@ -237,7 +230,6 @@ body {
         font-weight: 700;
         margin-top: 0%;
         margin-bottom: 0%;
-        color: rgb(54, 48, 54);
     }
 
     .week_description {
@@ -246,7 +238,6 @@ body {
         margin-left: 20%;
         margin-right: 20%;
         margin-bottom: 0%;
-        color: rgb(43, 41, 43);
     }
 
     .column {
