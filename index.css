@@ -1,324 +1,236 @@
-a:link, a:visited, a:active {
-    text-decoration:none;
-}
-
-body {
-    font-family: Arial;
-    font-size: xx-large;
-    line-height: 1.5;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 251, 245);
+* {
     margin: 0;
     padding: 0;
 }
 
-.title {
-    font-size: 250%;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 0%;
-    color: rgb(103, 65, 136);
-    font-variant: small-caps;
+/* [F] Remove link format */
+a:link, a:visited, a:active {
+    text-decoration: none;
 }
 
-.subtitle {
-    font-size: 75%;
-    text-align: center;
-    margin-top: 0%;
+
+/* [F] BODY ELEMENT BASIC PROPERTIES */
+body {
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 0%;
-    color: rgb(0, 0, 0);
-    font-weight: Bold;
+    background-color: rgb(255, 251, 245);
 }
 
-.title_description {
-    font-size: 65%;
+/* [F] Title and subtitle properties */
+.title { /* Replaceable by a logo */
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 2%;
+    color: rgb(103, 65, 136);
+}
+.subtitle {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* [F] Informative paragraph */
+    /* Se li podria posar un títol propi en negreta com a 1a línia */
+.introduction {
     text-align: justify;
     text-justify: inter-word;
-    margin-top: 3%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 3%;
-    color: rgb(0, 0, 0);
-    font-weight: Bold;
+    margin-top: 2%;
 }
 
+
+/* [F] INTERVIEW BUTTONS */
+
+/* [F] General box */
 .week_box {
-    width: 65%;
-    margin: 2% auto;
-    margin-top: 0%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 0%;
+    margin-top: 3%;
+    padding: 3%;
+    border-radius: 1%;
     background-color: rgb(247, 239, 229);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    font-size: 80%;
 }
 
+/* [F] Single button base */
 .week_button {
-    width: 100%;
-    height: 100%;
-    margin: 2% auto;
-    background-color: rgb(192, 172, 208);
-    border: 2px solid rgb(103, 65, 136);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 75%;
     margin-top: 0.5%;
-    margin-left: 0%;
-    margin-right: 0%;
     margin-bottom: 0.5%;
-    text-align: left;
+    display: flex;
+    flex-direction: row;
     cursor: pointer;
-    box-shadow: 0 0 5px 0 rgb(25, 105, 88);
+    background-color: rgb(192, 172, 208);
+    border-radius: 5px;
+    border: 2px solid rgb(103, 65, 136);
+    box-shadow: 0px 0px 7px 0px rgb(25, 105, 88);
+}
+/* [F] Color changing while cursor hovers it and when clicked */
+.week_button:hover, .week_button:active {
+    background-color: rgb(247, 239, 229);
 }
 
+/* [F] Button image */
 .week_img {
-    width: 100%;
-    height: 100%;
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 0%;
-    margin-bottom: 1%;
+    width: 8%;
+    height: 8%;
     border-radius: 5%;
     border: 2px solid rgb(103, 65, 136);
     border-radius: 5px;
 }
 
-.week_title {
-    font-size: 110%;
-    font-weight: 700;
-    float: center;
-    margin-top: 0%;
-    margin-left: 4%;
-    margin-right: 20%;
-    margin-bottom: 0%;
-    color: rgb(103, 65, 136);
+/* [F] General button content properties */
+.week_text {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.week_date {
-    font-size: 80%;
-    font-weight: 700;
-    min-width: 600px;
-    float: center;
-    margin-top: 0%;
-    margin-left: 4%;
-    margin-right: 20%;
-    margin-bottom: 0%;
-    color: rgb(73, 65, 73);
-}
-
-.week_profe {
-    font-size: 120%;
-    font-weight: 700;
-    margin-top: 0%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 0%;
-    color: rgb(54, 48, 54);
-}
-
-.week_description {
-    font-size: 100%;
-    font-weight: 700;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-top: 0%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 2%;
-    color: rgb(43, 41, 43);
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column {
-    float: left;
-    padding: 10px;
-    margin-left: 3%;
-}
-
-.l {
-    float: left;
-    width: 15%;
+.week_img, .week_text {    
     margin-top: 1%;
-}
-
-.r {
-    float: left;
-    width: 75%;
-    margin-top: 1%;
-    margin-left: -2%;
+    margin-left: 1%;
+    margin-right: 1%;
     margin-bottom: 1%;
 }
 
+/* [F] Professor name and description */
+.week_professor {
+    font-weight: bold;
+    text-align: justify;
+    text-justify: inter-word;
+    color: rgb(43, 41, 43);
+}
+
+/* [F] Week number and date */
+.week_title {
+    font-weight: bold;
+    min-width: 200px;
+    margin-left: 2%;
+}
+.week_number {
+    color: rgb(103, 65, 136);
+}
+.week_date {
+    color: rgb(73, 65, 73);
+}
+
+
+/* ------------------------------------------------- */
+
+/* [F] MOBILE VERSION */
+
+
 @media screen and (max-width: 900px) {
-    .title {
-        font-size: 150%;
-        font-weight: 700;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        margin-top: 8%;
+    
+    /* [F] BODY ELEMENT BASIC PROPERTIES */
+    body {
+        font-family: Arial;
+        color: rgb(0, 0, 0);
+        line-height: 1.5;
         margin-left: 5%;
         margin-right: 5%;
-        margin-bottom: 0%;
-        font-variant: small-caps;
-    }
-    
-    .subtitle {
-        font-size: 70%;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        margin-top: 0%;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 0%;
-        color: rgb(0, 0, 0);
-        font-weight: Bold;
-    }
-    
-    .title_description {
-        font-size: 55%;
-        text-align: justify;
-        text-justify: inter-word;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        margin-top: 3%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 3%;
-        color: rgb(0, 0, 0);
-        font-weight: Bold;
+        background-color: rgb(255, 251, 245);
     }
 
+    /* [F] Title and subtitle properties */
+    .title { /* Replaceable by a logo */
+        font-weight: bold;
+        font-variant: small-caps;
+        text-align: center;
+        margin-top: 2%;
+        color: rgb(103, 65, 136);
+    }
+    .subtitle {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* [F] Informative paragraph */
+        /* Se li podria posar un títol propi en negreta com a 1a línia */
+    .introduction {
+        text-align: justify;
+        text-justify: inter-word;
+        margin-top: 2%;
+    }
+
+
+    /* [F] INTERVIEW BUTTONS */
+
+    /* [F] General box */
     .week_box {
-        width: 88%;
-        margin-top: 5%;
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-bottom: 0%;
-        border-radius: 15px;
+        margin-top: 3%;
+        padding: 3%;
+        border-radius: 1%;
+        background-color: rgb(247, 239, 229);
+    }
+
+    /* [F] Single button base */
+    .week_button {
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        background-color: rgb(192, 172, 208);
+        border-radius: 5px;
+        border: 2px solid rgb(103, 65, 136);
+        box-shadow: 0px 0px 7px 0px rgb(25, 105, 88);
+    }
+    /* [F] Color changing while cursor hovers it and when clicked */
+    .week_button:hover, .week_button:active {
+        background-color: rgb(247, 239, 229);
+    }
+
+    /* [F] Button image */
+    .week_img {
+        width: 8%;
+        height: 8%;
+        border-radius: 5%;
+        border: 2px solid rgb(103, 65, 136);
+        border-radius: 5px;
+    }
+
+    /* [F] General button content properties */
+    .week_text {
+        text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        text-align: center;
-        padding: 5%;
     }
 
-    .week_button {
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 75%;
-        margin-top: 0.5%;
-        margin-left: 0%;
-        margin-right: 0%;
-        margin-bottom: 0.5%;
-        text-align: center;
-        cursor: pointer;
-    }
-
-    .week_img {
-        width: 15%;
-        height: 15%;
-        margin-top: 1%;
-        margin-left: 0%;
-        margin-right: 0%;
-        margin-bottom: 0%;
-        border-radius: 5%;
-        border-radius: 5px;
-    }
-
-    .week_title {
-        font-size: 100%;
-        font-weight: 700;
+    .week_img, .week_text {    
         margin-top: 2%;
-        margin-left: 0%;
-        margin-right: 0%;
-        margin-bottom: 0%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .week_date {
-        font-size: 80%;
-        font-weight: 700;
-        margin-top: 1%;
-        margin-left: 0%;
-        margin-right: 0%;
+        margin-left: 2%;
+        margin-right: 2%;
         margin-bottom: 2%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 
-    .week_profe {
-        font-size: 120%;
-        font-weight: 700;
-        margin-top: -2%;
-        margin-bottom: 0%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .week_description {
-        font-size: 80%;
-        font-weight: 700;
-        margin-top: 0%;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-bottom: 0%;
-        float: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    /* [F] Professor name and description */
+    .week_professor {
+        line-height: 1;
+        font-weight: bold;
         text-align: justify;
         text-justify: inter-word;
+        color: rgb(43, 41, 43);
     }
 
-    .column {
-        float: center;
-        padding: 10px;
+    /* [F] Week number and date */
+    .week_title {
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 200px;
+    }
+    .week_number {
+        width: 50%;
+        font-size: 100%;
+        color: rgb(103, 65, 136);
+    }
+    .week_date {
+        font-size: 50%;
+        font-size: 75%;
+        color: rgb(73, 65, 73);
+        margin-left: 2%;
     }
     
-    .l {
-        float:center;
-        width: 100%;
-        margin-top: 0%;
-        margin-left: 0%;
-    }
-    
-    .r {
-        float: center;
-        width: 100%;
-        margin-top: 0%;
-        margin-left: 0%;
-    }    
 }

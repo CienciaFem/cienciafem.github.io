@@ -56,9 +56,11 @@ body {
 }
 
 .interview_description {
-    font-size: 75%;
+    font-size: 60%;
     font-weight: 600;
     float: center;
+    text-align: justify;
+    text-justify: inter-word;
     margin-top: 1%;
     margin-left: 4%;
     margin-right: 20%;
@@ -89,7 +91,8 @@ body {
 
 .interview_body {
     font-size: 60%;
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
     line-height: 1.4;
     float: center;
     margin-top: 0%;
@@ -181,8 +184,10 @@ body {
 }
 
 .week_description {
-    font-size: 100%;
+    font-size: 90%;
     font-weight: 700;
+    text-align: justify;
+    text-justify: inter-word;
     margin-top: 0%;
     margin-left: 4%;
     margin-right: 4%;
@@ -216,7 +221,7 @@ body {
     margin-bottom: 1%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     .title {
         font-size: 150%;
         font-weight: 700;
@@ -278,7 +283,7 @@ body {
         align-items: center;
         text-align: justify;
         text-justify: inter-word;
-        margin-top: 20%;
+        margin-top: 25%;
         margin-left: -32%;
         margin-right: 10%;
         margin-bottom: 5%;
