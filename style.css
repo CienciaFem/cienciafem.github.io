@@ -127,8 +127,8 @@ body {
 }
 /* [F] Professor image */
 .interview_img {
-    width: 2150%;
-    height: 2150%;
+    width: 120%;
+    height: 120%;
     border-radius: 5px;
     border: 5px solid rgb(103, 65, 136);
 }
