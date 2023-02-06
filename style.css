@@ -244,6 +244,7 @@ p { margin-bottom: 1%}
 
 /* [F] Interview number and date */
 .interview_title {
+    font-size: 90%;
     font-weight: bold;
     min-width: 200px;
     margin-left: 2%;
@@ -335,6 +336,7 @@ p { margin-bottom: 1%}
 
     /* [F] Interview number and date */
     .interview_title {
+        font-size: 100%;
         width: 105%;
         display: flex;
         flex-direction: row;
