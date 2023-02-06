@@ -8,7 +8,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #FFFBF5;
+    background-color: rgb(247, 239, 229);
 }
 
 /* [Roger] - CSS DEL MENU DE DALT DE TOT*/
@@ -83,7 +83,6 @@ body {
     line-height: 1.5;
     margin-left: 20%;
     margin-right: 20%;
-    background-color: rgb(255, 251, 245);
 }
 
 /* [F] Title properties */
@@ -186,7 +185,7 @@ p { margin-bottom: 1%}
     margin-bottom: 2%;
     padding: 3%;
     border-radius: 1%;
-    background-color: rgb(247, 239, 229);
+    background-color: rgb(255, 251, 245);
 }
 
 /* [F] Single button base */
