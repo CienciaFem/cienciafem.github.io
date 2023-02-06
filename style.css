@@ -19,14 +19,37 @@ body {
     background-color: rgb(255, 251, 245);
 }
 
-/* [F] Title and subtitle properties */
-.title { /* Replaceable by a logo */
+/* [F] Title properties */
+.title, .title_wp { /* Replaceable by a logo */
     font-weight: bold;
     font-variant: small-caps;
     text-align: center;
-    display: flex;
     margin-top: 2%;
     color: rgb(103, 65, 136);
+}
+
+
+/* [F] INDEX PAGE ELEMENTS */
+
+/* [F] Subtitle properties */
+.subtitle {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* [F] Informative paragraph */
+    /* Se li podria posar un títol propi en negreta com a 1a línia */
+.introduction {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 2%;
+}
+
+
+/* [F] INTERVIEW PAGES ELEMENTS */
+
+.title_wp{
+    display: flex;
 }
 
 /* [F] Column containing professor image */
@@ -164,13 +187,29 @@ p { margin-bottom: 1%}
     color: rgb(73, 65, 73);
 }
 
-@media screen and (max-width: 900px) {
 
+/* ------------------------------------------------- */
+
+/* [F] MOBILE VERSION MODIFICATIONS */
+
+
+@media screen and (max-width: 900px) {
+    
     /* [F] BODY ELEMENT BASIC PROPERTIES */
     body {
         margin-left: 5%;
         margin-right: 5%;
     }
+
+
+    /* [F] INDEX PAGE ELEMENTS */
+
+    .introduction {
+        line-height: 1.4;
+    }
+
+
+    /* [F] INTERVIEW PAGES ELEMENTS */
 
     /* [F] Professor description */
     .interview_description {
