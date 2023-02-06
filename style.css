@@ -1,7 +1,75 @@
-* {
+*{
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    text-decoration: none;
+    list-style: none;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFBF5;
+}
+
+/* [Roger] - CSS DEL MENU DE DALT DE TOT*/
+
+.titol_1{
+    text-align:center;
+    font-size: 150%;
+    padding: 1% 0;
+}
+
+.navbar_element {
+    width:82%;
+    margin-left:9%;
+    margin-right:9%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_element *, label{
+    font-size: medium;
+    color: black;
+    text-align: center;
+    padding: 10px 3%;
+    display: inline-block;
+}
+
+.navbar_element li a, label{
+    transition: all 0.2s ease 0s;
+}
+
+.navbar_element li a:hover, label:hover{
+    padding: 9px 3%;
+    box-sizing: border-box;
+    transition: all 0.2s ease 0s;
+    border-bottom: solid 2px #674188;
+    cursor: pointer;
+}
+
+#ent_btn{
+    display: none;   
+}
+
+.dropdown{
+    height: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-top:solid 2px #674188;
+    padding-top: 2px;
+    transition: height 0.5s ease-in;    
+}
+
+.navbar_element:has(.entr input:checked) ~ .dropdown{
+    height:40px;
+    display: flex;
+}
+
+/*----------------Final del css de header---------------*/
+
+
 
 /* [F] Remove link format */
 a:link, a:visited, a:active {
@@ -11,7 +79,6 @@ a:link, a:visited, a:active {
 
 /* [F] BODY ELEMENT BASIC PROPERTIES */
 body {
-    font-family: Arial;
     color: rgb(0, 0, 0);
     line-height: 1.5;
     margin-left: 20%;
