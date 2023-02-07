@@ -6,13 +6,13 @@
     list-style: none;
 }
 
-/* [F] Remove link format */
+/* Remove link format */
 a:link, a:visited, a:active {
     text-decoration: none;
 }
 
 
-/* [F] BODY ELEMENT BASIC PROPERTIES */
+/* BODY ELEMENT BASIC PROPERTIES */
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
@@ -22,7 +22,7 @@ body {
     background-color: rgb(247, 239, 229);
 }
 
-/* [F] Title properties */
+/* Title properties */
 .title {
     font-size: 250%;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 
-/* [R,F] - CSS DEL MENU DE DALT DE TOT*/
+/* CSS DEL MENU DE DALT DE TOT*/
 
 /* .navbar_element {
     width:82%;
@@ -92,9 +92,9 @@ body {
 
 
 
-/* [F] INDEX PAGE ELEMENTS */
+/* INDEX PAGE ELEMENTS */
 
-/* [F] Subtitle properties */
+/* Subtitle properties */
 .subtitle {
     font-weight: bold;
     line-height: 1.2;
@@ -116,19 +116,20 @@ body {
 /* menu button properties */
 .menu_button {
     font-weight: bold;
+    color: rgb(103, 65, 136);
     text-align: center;
     width: 35%;
     padding: 1% 0;
     cursor: pointer;
 }
-.menu_button:hover {
+.menu_button:hover, .menu_button:active {
     cursor: pointer;
     border-bottom: solid 1px rgb(103, 65, 136);
     background-color: rgb(255, 251, 245);
 }
 
 
-/* [F] Informative paragraph */
+/* Informative paragraph */
     /* Se li podria posar un títol propi en negreta com a 1a línia */
 .introduction {
     text-align: justify;
@@ -137,20 +138,20 @@ body {
 }
 
 
-/* [F] INTERVIEW PAGES ELEMENTS */
+/* INTERVIEW PAGES ELEMENTS */
 
-/* [F] Special title */
+/* Special title */
 .title_wp{
     display: flex;
 }
 
-/* [F] Column containing professor image */
+/* Column containing professor image */
 .column_img {
     float: left;
     width: 15%;
     margin-top: 2%;
 }
-/* [F] Professor image */
+/* Professor image */
 .interview_img {
     width: 120%;
     height: 120%;
@@ -158,14 +159,14 @@ body {
     border: 5px solid rgb(103, 65, 136);
 }
 
-/* [F] Column containing professor name and description */
+/* Column containing professor name and description */
 .column_title {
     float: left;
     width: 83%;
     margin-left: 2%;
     margin-bottom: 8%;
 }
-/* [F] Professor name */
+/* Professor name */
 .interview_title {
     font-weight: bold;
     margin-top: 1%;
@@ -173,7 +174,7 @@ body {
     margin-bottom: 0%;
     color: rgb(103, 65, 136);
 }
-/* [F] Professor description */
+/* Professor description */
 .interview_description {
     font-weight: bold;
     float: center;
@@ -184,27 +185,27 @@ body {
     color: rgb(0, 0, 0);
 }
 
-/* [F] Interview date of publication */
+/* Interview date of publication */
 .interview_date {
     font-weight: bold;
     float: center;
     color: rgb(73, 65, 73);
 }
 
-/* [F] Interview text properties */
+/* Interview text properties */
 .interview_body {
     text-align: justify;
     text-justify: inter-word;
     float: center;
     margin-top: 2%;
 }
-/* [F] Introducing space between <p> elements */
+/* Introducing space between <p> elements */
 p { margin-bottom: 1%}
 
 
-/* [F] INTERVIEW BUTTONS */
+/* INTERVIEW BUTTONS */
 
-/* [F] General box */
+/* General box */
 .buttons_box {
     margin-top: 3%;
     margin-bottom: 2%;
@@ -213,8 +214,8 @@ p { margin-bottom: 1%}
     background-color: rgb(255, 251, 245);
 }
 
-/* [F] Single button base */
-.interview_button {
+/* Single button base */
+.interview_button, .interview_button_deactivated {
     margin-top: 0.5%;
     margin-bottom: 0.5%;
     display: flex;
@@ -225,12 +226,12 @@ p { margin-bottom: 1%}
     border: 2px solid rgb(103, 65, 136);
     box-shadow: 0px 0px 7px 0px rgb(25, 105, 88);
 }
-/* [F] Color changing while cursor hovers it and when clicked */
+/* Color changing while cursor hovers it and when clicked */
 .interview_button:hover, .interview_button:active {
     background-color: rgb(247, 239, 229);
 }
 
-/* [F] Button image */
+/* Button image */
 .intbut_img {
     width: 8%;
     height: 8%;
@@ -239,8 +240,8 @@ p { margin-bottom: 1%}
     border-radius: 5px;
 }
 
-/* [F] General button content properties */
-.intbut_text {
+/* General button content properties */
+.intbut_text, .intbut_text_deactivated {
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -254,48 +255,59 @@ p { margin-bottom: 1%}
     margin-bottom: 1%;
 }
 
-/* [F] Professor name and description */
+/* Professor name and description */
 .intbut_professor {
     font-weight: bold;
     text-align: justify;
     text-justify: inter-word;
     color: rgb(43, 41, 43);
 }
-/* [F] Adding a separation between professor name and description */
-    /* [F] Only mobile version */
+/* Adding a separation between professor name and description */
+    /* Only mobile version */
 .intbut_description{
     margin-top: 0%;
 }
 
-/* [F] Interview number and date */
+/* Interview number and date */
 .intbut_title {
     font-weight: bold;
     min-width: 200px;
     margin-left: 2%;
 }
-.intbut_number {
+.intbut_number, .intbut_number_deactivated {
     color: rgb(103, 65, 136);
 }
-.intbut_date {
+.intbut_date, .intbut_date_deactivated {
     color: rgb(73, 65, 73);
+}
+
+/* Deactivated button different properties */
+.interview_button_deactivated {
+    background-color: rgb(174, 171, 177);
+}
+.intbut_text_deactivated {
+    margin-left: auto;
+    margin-right: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
 }
 
 
 /* ------------------------------------------------- */
 
-/* [F] MOBILE VERSION MODIFICATIONS */
+/* MOBILE VERSION MODIFICATIONS */
 
 
 @media screen and (max-width: 900px) {
     
-    /* [F] BODY ELEMENT BASIC PROPERTIES */
+    /* BODY ELEMENT BASIC PROPERTIES */
     body {
         margin-left: 5%;
         margin-right: 5%;
     }
 
 
-    /* [F] INDEX PAGE ELEMENTS */
+    /* INDEX PAGE ELEMENTS */
 
     /* menu button properties */
     .menu_button {
@@ -308,41 +320,41 @@ p { margin-bottom: 1%}
     }
 
 
-    /* [F] INTERVIEW PAGES ELEMENTS */
+    /* INTERVIEW PAGES ELEMENTS */
 
-    /* [F] Professor image */
+    /* Professor image */
     .interview_img {
         border: 2px solid rgb(103, 65, 136);
     }
 
-    /* [F] Professor name */
+    /* Professor name */
     .interview_title {
         font-size: 130%;
     }
 
-    /* [F] Professor description */
+    /* Professor description */
     .interview_description {
         font-size: 90%;
         line-height: 1.1;
     }
 
-    /* [F] Interview date of publication */
+    /* Interview date of publication */
     .interview_date {
         font-size: 80%;
     }
 
-    /* [F] Interview text properties */
+    /* Interview text properties */
     .interview_body {
         font-size: 90%;
         line-height: 1.4;
     }
-    /* [F] Introducing space between <p> elements */
+    /* Introducing space between <p> elements */
     p { margin-bottom: 2%}
 
 
-    /* [F] INTERVIEW BUTTONS */
+    /* INTERVIEW BUTTONS */
 
-    /* [F] General button content properties */
+    /* General button content properties */
     .intbut_text {
         flex-direction: column;
     }
@@ -354,17 +366,17 @@ p { margin-bottom: 1%}
         margin-bottom: 2%;
     }
 
-    /* [F] Professor name and description */
+    /* Professor name and description */
     .intbut_professor {
         font-size: 90%;
         line-height: 1;
     }
-    /* [F] Adding a separation between professor name and description */
+    /* Adding a separation between professor name and description */
     .intbut_description{
         margin-top: 2%;
     }
 
-    /* [F] Interview number and date */
+    /* Interview number and date */
     .intbut_title {
         font-size: 100%;
         width: 105%;
@@ -381,5 +393,26 @@ p { margin-bottom: 1%}
         width: 70%;
         font-size: 60%;
     }
-    
+
+    /* Deactivated button different properties */
+    .intbut_text_deactivated {
+        text-align: center;
+        display: inline-block;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 12%;
+        margin-bottom: 1%;
+    }
+    .intbut_number_deactivated {
+        font-size: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .intbut_date_deactivated {
+        font-size: 55%;
+        text-align: left;
+        margin-left: 14%;
+        margin-right: -10%;
+    }
+
 }
