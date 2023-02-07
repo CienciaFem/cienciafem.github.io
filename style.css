@@ -6,20 +6,38 @@
     list-style: none;
 }
 
+/* [F] Remove link format */
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+
+/* [F] BODY ELEMENT BASIC PROPERTIES */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    margin-left: 20%;
+    margin-right: 20%;
     background-color: rgb(247, 239, 229);
 }
 
-/* [Roger] - CSS DEL MENU DE DALT DE TOT*/
-
-.titol_1{
-    text-align:center;
-    font-size: 150%;
-    padding: 1% 0;
+/* [F] Title properties */
+.title {
+    font-size: 250%;
+}
+.title, .title_wp { /* Replaceable by a logo */
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 2%;
+    color: rgb(103, 65, 136);
 }
 
-.navbar_element {
+
+/* [R,F] - CSS DEL MENU DE DALT DE TOT*/
+
+/* .navbar_element {
     width:82%;
     margin-left:9%;
     margin-right:9%;
@@ -65,33 +83,13 @@ body {
 .navbar_element:has(.entr input:checked) ~ .dropdown{
     height:40px;
     display: flex;
-}
+} */
 
 /*----------------Final del css de header---------------*/
 
 
 
-/* [F] Remove link format */
-a:link, a:visited, a:active {
-    text-decoration: none;
-}
 
-
-/* [F] BODY ELEMENT BASIC PROPERTIES */
-body {
-    color: rgb(0, 0, 0);
-    line-height: 1.5;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-/* [F] Title properties */
-.title, .title_wp { /* Replaceable by a logo */
-    font-weight: bold;
-    font-variant: small-caps;
-    text-align: center;
-    color: rgb(103, 65, 136);
-}
 
 
 /* [F] INDEX PAGE ELEMENTS */
@@ -99,8 +97,36 @@ body {
 /* [F] Subtitle properties */
 .subtitle {
     font-weight: bold;
+    line-height: 1.2;
     text-align: center;
 }
+
+
+/* MENU BAR ELEMENTS */
+
+/* Menu element properties */
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    border-top: solid 2px rgb(103, 65, 136);
+    border-bottom: solid 2px rgb(103, 65, 136);
+}
+
+/* menu button properties */
+.menu_button {
+    font-weight: bold;
+    text-align: center;
+    width: 35%;
+    padding: 1% 0;
+    cursor: pointer;
+}
+.menu_button:hover {
+    cursor: pointer;
+    border-bottom: solid 1px rgb(103, 65, 136);
+    background-color: rgb(255, 251, 245);
+}
+
 
 /* [F] Informative paragraph */
     /* Se li podria posar un títol propi en negreta com a 1a línia */
@@ -116,7 +142,6 @@ body {
 /* [F] Special title */
 .title_wp{
     display: flex;
-    margin-top: 2%;
 }
 
 /* [F] Column containing professor image */
@@ -272,8 +297,14 @@ p { margin-bottom: 1%}
 
     /* [F] INDEX PAGE ELEMENTS */
 
+    /* menu button properties */
+    .menu_button {
+        font-size: 90%;
+    }
+
     .introduction {
         line-height: 1.4;
+        margin-top: 5%;
     }
 
 
