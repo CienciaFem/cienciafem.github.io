@@ -54,55 +54,65 @@ body {
 
 /* MENU BAR ELEMENTS */
 
-/* Menu element properties */
-.menu {
+/* [Roger] - CSS DEL MENU DE DALT DE TOT*/
+
+.navbar{
+    margin-top: 1%;    
+}
+
+.navbar_element {
+
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    margin-top: 3%;
-    border-top: solid 2px rgb(103, 65, 136);
-    border-bottom: solid 2px rgb(103, 65, 136);
+    flex-direction: row;    
+    align-items: center;
+    border-top:solid 2px #674188;
+    border-bottom: solid 2px #674188;
 }
 
-/* Menu button properties */
-.menu_button {
-    font-weight: bold;
-    color: rgb(103, 65, 136);
+.navbar_element *, label{
+    font-size: medium;
+    color: black;
     text-align: center;
+    padding: 1% 0%;
+    display: inline-block;
     width: 35%;
-    padding: 1% 0;
-    cursor: pointer;
-}
-.menu_button:hover, .menu_button:active {
-    cursor: pointer;
-    border-bottom: solid 1px rgb(103, 65, 136);
-    background-color: rgb(255, 251, 245);
+    transition: all 0.2s ease-in 0s;    
 }
 
-/* Dropdown menu elements properties */
-.dropdown_menu {
-    display: none;
-    position: absolute;
-}
-.dropdown_menu a, .dropdown_menu div {
-    color: rgb(103, 65, 136);
-    padding-top: 2%;
-    padding-bottom: 2%;
-    display: block;
-    background-color: rgb(255, 251, 245);
-}
-.dropdown_menu a:hover, .dropdown_menu a:active {
-    background-color: rgb(247, 239, 229);
-}
-.dropdown_menu div {
-    background-color: rgb(174, 171, 177);
-}
-.menu_button:hover .dropdown_menu {
-    padding-top: 1.1%;
-    display: block;
-    left: 40%;
-    right: 40%;
+.navbar_element *:hover, label:hover {
+    background-color: #FFFBF5;
+    cursor: pointer;
 }
 
+#ent_btn{
+    display: none;   
+}
+
+.dropdown{
+    opacity: 0;
+    max-height: 0px;
+
+    border-top: none;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+
+    flex-direction: initial;
+    flex-wrap: wrap;
+
+    transition: max-height 0.5s ease-in, opacity 0.6s ease-in;    
+}
+
+.dropdown *{
+    width: 33%
+}
+
+.navbar_element:has(#ent_btn:checked) ~ .dropdown{
+    opacity: 1;
+    max-height:280px;
+}
+
+/*----------------Final del css de header---------------*/
 
 
 /* Informative paragraph */
@@ -307,6 +317,18 @@ p { margin-bottom: 1%}
     /* INDEX PAGE ELEMENTS */
 
     /* menu button properties */
+
+    /* [R] Menu a columna per mobils */
+    .dropdown {
+        flex-direction: column;
+    }
+
+    .dropdown *{
+        width: 100%
+    }
+
+    /*--[R]--Done*/
+
     .menu_button {
         font-size: 90%;
     }
