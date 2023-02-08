@@ -111,6 +111,11 @@ body {
     max-height:280px;
 }
 
+.navbar_element:has(#ent_btn:hover) ~ .dropdown{
+    opacity: 1;
+    max-height:280px;
+}
+
 /*----------------Final del css de header---------------*/
 
 
