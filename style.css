@@ -61,7 +61,6 @@ body {
 }
 
 .navbar_element {
-
     overflow: hidden;
     display: flex;
     flex-direction: row;    
