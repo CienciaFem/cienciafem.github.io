@@ -17,8 +17,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
     line-height: 1.5;
-    margin-left: 20%;
-    margin-right: 20%;
+    background-color: rgb(255, 255, 255);
+}
+
+.box {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     background-color: rgb(247, 239, 229);
 }
 
@@ -30,7 +38,6 @@ body {
     font-weight: bold;
     font-variant: small-caps;
     text-align: center;
-    margin-top: 2%;
     color: rgb(103, 65, 136);
 }
 
@@ -154,6 +161,17 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.interview_box {
+    margin-left: -10%;
+    margin-right: -10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 0.5%;
+    background-color: rgb(255, 251, 245);
+}
+
 /* Interview date of publication */
 .interview_date {
     font-weight: bold;
@@ -170,6 +188,7 @@ body {
 }
 /* Introducing space between <p> elements */
 p { margin-bottom: 1%}
+
 
 
 /* INTERVIEW BUTTONS */
@@ -193,11 +212,14 @@ p { margin-bottom: 1%}
     background-color: rgb(192, 172, 208);
     border-radius: 5px;
     border: 2px solid rgb(103, 65, 136);
-    box-shadow: 0px 0px 7px 0px rgb(25, 105, 88);
+    box-shadow: 0px 0px 7px 0px  rgb(255, 200, 0);
 }
 /* Color changing while cursor hovers it and when clicked */
 .interview_button:hover, .interview_button:active {
     background-color: rgb(247, 239, 229);
+}
+.interview_button_deactivated {
+    box-shadow: 0px 0px 0px 0px;
 }
 
 /* Button image */
@@ -273,6 +295,12 @@ p { margin-bottom: 1%}
     body {
         margin-left: 5%;
         margin-right: 5%;
+        background-color: rgb(247, 239, 229);
+    }
+
+    .box {
+        margin: 0;
+        padding: 0;
     }
 
 
