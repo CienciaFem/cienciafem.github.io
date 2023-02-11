@@ -131,7 +131,7 @@ body {
 }
 
 .dropdown *{
-    width: 33%
+    width: 33%;
 }
 
 .navbar_element:has(#ent_btn:hover) ~ .dropdown, .dropdown:hover {
