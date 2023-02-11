@@ -480,4 +480,11 @@ p { margin-bottom: 1%}
         right: 35%;
     }
 
+
+    /* ABOUT US PAGE */
+
+    .social_networks {
+        max-width: 290px;
+    }
+
 }
