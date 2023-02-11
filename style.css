@@ -36,8 +36,7 @@ body {
 .clear_box, .violet_box {
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 3%;
@@ -52,6 +51,8 @@ body {
     background-color: rgb(255, 251, 245);
 }
 .violet_box {
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: rgb(192, 172, 208);
     border: 2px solid rgb(103, 65, 136);
 }
@@ -369,6 +370,14 @@ p { margin-bottom: 1%}
         margin-left: -5%;
         margin-right: -5%;
         padding-top: 5%;
+    }
+    
+    .violet_box {
+        font-size: 80%;
+        line-height: 1;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5%;
     }
 
     .title {
