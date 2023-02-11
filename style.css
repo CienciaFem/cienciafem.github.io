@@ -57,7 +57,7 @@ body {
 
 /* Title properties */
 .title {
-    width: 25%;
+    width: 35%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -365,7 +365,7 @@ p { margin-bottom: 1%}
     }
 
     .title {
-        width: 50%;
+        width: 60%;
     }
 
 
