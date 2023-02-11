@@ -133,9 +133,16 @@ body {
     width: 33%;
 }
 
-.navbar_element:has(#ent_btn:hover) ~ .dropdown, .dropdown:hover {
+#ent_btn:hover ~ .dropdown, .dropdown:hover {
     opacity: 1;
     max-height:280px;
+}
+
+@media screen and (min-width: 900px) {
+    #ent_btn:checked ~ .dropdown{
+        opacity: 1;
+        max-height:280px;
+    }
 }
 
 .deactivated, .deactivated:hover {
