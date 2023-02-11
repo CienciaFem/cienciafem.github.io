@@ -213,9 +213,9 @@ body {
     margin-left: -10%;
     margin-right: -10%;
     margin-bottom: 3%;
+    padding-top: 3%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 3%;
     padding-bottom: 3%;
     border-radius: 0.5%;
     background-color: rgb(255, 251, 245);
@@ -239,7 +239,6 @@ body {
 /* Interview date of publication */
 .interview_date {
     font-weight: bold;
-    float: center;
     color: rgb(73, 65, 73);
 }
 
