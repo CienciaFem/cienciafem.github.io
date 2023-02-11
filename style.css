@@ -61,10 +61,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-weight: bold;
-    font-variant: small-caps;
-    text-align: center;
-    color: rgb(103, 65, 136);
 }
 
 
@@ -76,6 +72,7 @@ body {
     text-align: center;
     margin-top: 1%;
     margin-bottom: 1%;
+    color: rgb(103, 65, 136);
 }
 
 
