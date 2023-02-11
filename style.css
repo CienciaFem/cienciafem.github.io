@@ -72,9 +72,10 @@ body {
 
 /* Subtitle properties */
 .subtitle {
-    font-weight: bold;
     line-height: 1.2;
     text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 
