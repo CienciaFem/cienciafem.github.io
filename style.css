@@ -324,10 +324,6 @@ p { margin-bottom: 1%}
 
 /* ABOUT US PAGE */
 
-.social_networks {
-    margin-bottom: 4%;
-}
-
 .participant {
     display: block;
     margin-top: 2%;
@@ -489,7 +485,7 @@ p { margin-bottom: 1%}
     /* ABOUT US PAGE */
 
     .social_networks {
-        max-width: 290px;
+        text-align: left;
     }
 
 }
