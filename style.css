@@ -58,6 +58,11 @@ body {
     border: 2px solid rgb(103, 65, 136);
     text-align: justify;
 }
+.violet_box a {
+    display: flex;
+    align-items: center;
+    margin: 0.2% 0;
+}
 
 /* Title properties */
 .title {
