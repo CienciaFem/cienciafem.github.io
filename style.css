@@ -9,6 +9,7 @@
 /* Remove link format */
 a:link, a:visited, a:active {
     text-decoration: none;
+    color: inherit;
 }
 
 
@@ -146,7 +147,7 @@ body {
     }
 }
 
-.deactivated, .deactivated:hover {
+.deactivated, .deactivated:hover, .deactivated:active {
     color: rgb(73, 65, 73);
     background-color: rgb(247, 239, 229);
 }
@@ -188,7 +189,7 @@ body {
 .column_title {
     float: right;
     width: 80%;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
 }
 /* Professor name */
 .interview_title {
@@ -286,7 +287,6 @@ p { margin-bottom: 1%}
 .intbut_img {
     width: 8%;
     height: 8%;
-    border-radius: 5%;
     border: 2px solid rgb(103, 65, 136);
     border-radius: 5px;
 }
@@ -343,6 +343,40 @@ p { margin-bottom: 1%}
 .icon {
     width: 20px;
 }
+
+
+/* INTERVIEWS NEXT AND PREVIOUS BUTTONS */
+
+.bottom_buttons {
+    width: 70%;
+    margin: 5% auto;
+    overflow: hidden;
+    display: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(103, 65, 136);
+}
+.bottom_buttons a:hover, .bottom_buttons a:active {
+    background-color: rgb(255, 251, 245);
+}
+
+.previous_button, .next_button {
+    width: 46%;
+    border: 2px solid rgb(103, 65, 136);
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.previous_button {
+    text-align: left;
+    float: left;
+}
+
+.next_button {
+    text-align: right;
+    float: right;
+}
+
 
 
 /* ------------------------------------------------- */
@@ -505,6 +539,18 @@ p { margin-bottom: 1%}
 
     .social_networks {
         text-align: left;
+    }
+
+
+    /* INTERVIEWS NEXT AND PREVIOUS BUTTONS */
+
+    .bottom_buttons {
+        width: 100%;
+    }
+
+    .previous_button, .next_button {
+        font-size: 70%;
+        width: 49.5%;
     }
 
 }
