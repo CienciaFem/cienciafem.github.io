@@ -56,6 +56,7 @@ body {
     margin-right: 10%;
     background-color: rgb(192, 172, 208);
     border: 2px solid rgb(103, 65, 136);
+    text-align: justify;
 }
 
 /* Title properties */
