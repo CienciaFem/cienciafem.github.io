@@ -52,8 +52,10 @@ body {
     background-color: rgb(255, 251, 245);
 }
 .violet_box {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: rgb(192, 172, 208);
     border: 2px solid rgb(103, 65, 136);
     text-align: justify;
@@ -62,6 +64,12 @@ body {
     display: flex;
     align-items: center;
     margin: 0.2% 0;
+}
+.violet_box h4 {
+    margin-bottom: 1.5%;
+}
+.violet_box img {
+    margin-right: 2%;
 }
 
 /* Title properties */
@@ -416,10 +424,18 @@ p { margin-bottom: 1%}
     
     .violet_box {
         font-size: 80%;
-        line-height: 1.5;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 5%;
+    }
+    .violet_box a {
+        margin: 0.6% 0;
+    }
+    .violet_box h4 {
+        margin-bottom: 2%;
+    }
+    .violet_box img {
+        margin-right: 4%;
     }
 
     .title {
@@ -477,24 +493,29 @@ p { margin-bottom: 1%}
 
     /* Clear box */
     .interview_box {
-        align-items: center;
+        margin-right: -5%;
     }
 
     /* Professor description box */
     .description_box {
         width: 100%;
+        margin-left: 2.5%;
+        margin-right: -2.5%;
+        float: center;
         margin-bottom: 10%;
     }
 
     /* Interview date of publication */
     .interview_date {
         font-size: 80%;
+        margin-right: -5%;
     }
 
     /* Interview text properties */
     .interview_body {
         font-size: 90%;
         line-height: 1.4;
+        margin-right: -5%;
     }
     /* Introducing space between <p> elements */
     p { margin-bottom: 2%}
