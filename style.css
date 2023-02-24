@@ -376,21 +376,26 @@ p { margin-bottom: 1%}
     background-color: rgb(255, 251, 245);
 }
 
-.previous_button, .next_button {
+.previous_button, .next_button, .inici_button, .aboutus_button {
     width: 46%;
     border: 2px solid rgb(103, 65, 136);
     border-radius: 5px;
     padding: 2%;
 }
 
-.previous_button {
+.previous_button, .inici_button {
     text-align: left;
     float: left;
 }
 
-.next_button {
+.next_button, .aboutus_button {
     text-align: right;
     float: right;
+}
+
+
+.inici_button, .aboutus_button {
+    text-align: center;
 }
 
 
@@ -578,7 +583,7 @@ p { margin-bottom: 1%}
         width: 100%;
     }
 
-    .previous_button, .next_button {
+    .previous_button, .next_button, .inici_button, .aboutus_button {
         font-size: 70%;
         width: 49.5%;
     }
