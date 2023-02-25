@@ -345,9 +345,13 @@ p { margin-bottom: 1%}
 
 .link_icon {
     display: inline-flex;
+    text-align: center;
     align-items: center;
     margin-top: 1%;
     margin-right: auto;
+}
+.link_icon a {
+    color: white;
 }
 .link_icon div {
     margin-left: 10px;
