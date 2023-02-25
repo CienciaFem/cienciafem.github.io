@@ -383,8 +383,16 @@ p { margin-bottom: 1%}
 .fa-email {
     background: rgb(83, 83, 83);
 }
+.fa-email img {
+    width: 17px;
+    height: 17px;
+}
 .fa-telephone {
     background: rgb(126, 71, 71);
+}
+.fa-telephone img {
+    width: 17px;
+    height: 17px;
 }
 .fa-instagram {
     background: rgb(234, 76, 137);
