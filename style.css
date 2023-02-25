@@ -52,24 +52,21 @@ body {
     background-color: rgb(255, 251, 245);
 }
 .violet_box {
+    line-height: 1;
+    text-align: justify;
     margin-left: 5%;
     margin-right: 5%;
     padding-left: 5%;
     padding-right: 5%;
     background-color: rgb(192, 172, 208);
     border: 2px solid rgb(103, 65, 136);
-    text-align: justify;
 }
 .violet_box a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    margin: 0.2% 0;
 }
 .violet_box h4 {
     margin-bottom: 1.5%;
-}
-.violet_box img {
-    margin-right: 2%;
 }
 
 /* Title properties */
@@ -281,7 +278,7 @@ p { margin-bottom: 1%}
 }
 
 /* Single button base */
-.interview_button, .interview_button_old {
+.interview_button {
     margin-top: 0.5%;
     margin-bottom: 0.5%;
     display: flex;
@@ -291,7 +288,7 @@ p { margin-bottom: 1%}
     border-radius: 5px;
     border: 2px solid rgb(103, 65, 136);
 }
-.interview_button {
+.-new {
     box-shadow: 0px 0px 7px 0px  rgb(255, 200, 0);
 }
 /* Color changing while cursor hovers it and when clicked */
@@ -344,20 +341,60 @@ p { margin-bottom: 1%}
 }
 
 
-/* ABOUT US PAGE */
+/* LINKS WITH ICONS / ABOUT US */
 
-.participant {
-    display: block;
-    margin-top: 2%;
+.link_icon {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1%;
+    margin-right: auto;
+}
+.link_icon div {
+    margin-left: 10px;
 }
 
 .participant_name {
-    margin-right: 3%;
+    margin-right: 10px;
     float: left;
 }
 
-.icon {
-    width: 20px;
+.fa {
+    font-size: 30px;
+    margin: 5px;
+    margin-left: 0;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.fa:before, .fa span {
+    color: white;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+    background: rgb(85, 172, 238);
+}
+.fa-email {
+    background: rgb(83, 83, 83);
+}
+.fa-telephone {
+    background: rgb(126, 71, 71);
+}
+.fa-instagram {
+    background: rgb(234, 76, 137);
+}
+.fa-linkedin {
+    background: rgb(0, 123, 181);
+}
+.fa-web {
+    width: 55px;
+    height: 55px;
+    margin: -5px;
+    margin-left: -10px;
 }
 
 
@@ -393,9 +430,14 @@ p { margin-bottom: 1%}
     float: right;
 }
 
-
 .inici_button, .aboutus_button {
     text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .bottom_buttons {
+        width: 100%;
+    }
 }
 
 
@@ -572,16 +614,26 @@ p { margin-bottom: 1%}
 
     /* ABOUT US PAGE */
 
-    .social_networks {
-        text-align: left;
+    .link_icon {
+        font-size: 110%;
+    }
+    .link_icon a{
+        margin-right: 5px;
+    }
+    .link_icon div{
+        margin-left: 0;
+    }
+    .fa-web {
+        height: 52px;
+        margin-top: -10px;
+        margin-bottom: -5px;
+    }
+    .-mobile_mod {
+        padding-left: 10px;
     }
 
 
     /* INTERVIEWS NEXT AND PREVIOUS BUTTONS */
-
-    .bottom_buttons {
-        width: 100%;
-    }
 
     .previous_button, .next_button, .inici_button, .aboutus_button {
         font-size: 70%;
