@@ -350,9 +350,6 @@ p { margin-bottom: 1%}
     margin-top: 1%;
     margin-right: auto;
 }
-.link_icon a {
-    color: white;
-}
 .link_icon div {
     margin-left: 10px;
 }
@@ -368,9 +365,11 @@ p { margin-bottom: 1%}
     margin-left: 0;
     width: 36px;
     height: 36px;
+    display: relative;
     text-align: center;
+    align-items: center;
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 30%;
     text-decoration: none;
 }
 .fa:before, .fa span {
@@ -387,6 +386,7 @@ p { margin-bottom: 1%}
 }
 .fa-telephone {
     background: rgb(126, 71, 71);
+    color: white;
 }
 .fa-instagram {
     background: rgb(234, 76, 137);
