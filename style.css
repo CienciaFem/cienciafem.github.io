@@ -52,7 +52,7 @@ body {
     background-color: rgb(255, 251, 245);
 }
 .violet_box {
-    line-height: 1;
+    line-height: 1.2;
     text-align: justify;
     margin-left: 5%;
     margin-right: 5%;
@@ -345,7 +345,7 @@ p { margin-bottom: 1%}
 
 .link_icon {
     display: inline-flex;
-    text-align: center;
+    text-align: left;
     align-items: center;
     margin-top: 1%;
     margin-right: auto;
@@ -381,18 +381,18 @@ p { margin-bottom: 1%}
     background: rgb(85, 172, 238);
 }
 .fa-email {
-    background: rgb(83, 83, 83);
+    background: rgb(80, 95, 95);
 }
 .fa-email img {
-    width: 17px;
-    height: 17px;
+    width: 16.5px;
+    height: 16.5px;
 }
 .fa-telephone {
     background: rgb(126, 71, 71);
 }
 .fa-telephone img {
-    width: 17px;
-    height: 17px;
+    width: 16.5px;
+    height: 16.5px;
 }
 .fa-instagram {
     background: rgb(234, 76, 137);
@@ -401,10 +401,11 @@ p { margin-bottom: 1%}
     background: rgb(0, 123, 181);
 }
 .fa-web {
-    width: 55px;
-    height: 55px;
-    margin: -5px;
-    margin-left: -10px;
+    background: rgb(110, 110, 110);
+}
+.fa-web img {
+    width: 16.5px;
+    height: 16.5px;
 }
 
 
@@ -631,15 +632,7 @@ p { margin-bottom: 1%}
         margin-right: 5px;
     }
     .link_icon div{
-        margin-left: 0;
-    }
-    .fa-web {
-        height: 52px;
-        margin-top: -10px;
-        margin-bottom: -5px;
-    }
-    .-mobile_mod {
-        padding-left: 10px;
+        margin-left: 10PX;
     }
 
 
