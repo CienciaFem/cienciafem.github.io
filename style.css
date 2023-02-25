@@ -368,7 +368,7 @@ p { margin-bottom: 1%}
     text-align: center;
     align-items: center;
     padding: 10px;
-    border-radius: 30%;
+    border-radius: 50%;
     text-decoration: none;
 }
 .fa:before, .fa span {
@@ -382,6 +382,7 @@ p { margin-bottom: 1%}
 }
 .fa-email {
     background: rgb(83, 83, 83);
+    color: white;
 }
 .fa-telephone {
     background: rgb(126, 71, 71);
