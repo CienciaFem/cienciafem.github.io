@@ -17,9 +17,9 @@ a:link, a:visited, a:active {
 body {
     /* font-family: Arial, Helvetica, sans-serif; */
     font-family: "Century Gothic";
-    color: rgb(0, 0, 0);
+    color: black;
     line-height: 1.5;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
 .box {
@@ -31,7 +31,7 @@ body {
     padding-bottom: 2%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(247, 239, 229);
+    background-color: #F7EFE5;
 }
 
 .clear_box, .violet_box {
@@ -49,7 +49,7 @@ body {
     text-decoration: none;
 }
 .clear_box {
-    background-color: rgb(255, 251, 245);
+    background-color: #FFFBF5;
 }
 .violet_box {
     line-height: 1.2;
@@ -58,8 +58,8 @@ body {
     margin-right: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: rgb(192, 172, 208);
-    border: 2px solid rgb(103, 65, 136);
+    background-color: #C0ACD0;
+    border: 2px solid #674188;
 }
 .violet_box a {
     display: inline-flex;
@@ -86,7 +86,7 @@ body {
     text-align: center;
     margin-top: 1%;
     margin-bottom: 1%;
-    color: rgb(103, 65, 136);
+    color: #674188;
 }
 
 
@@ -103,8 +103,8 @@ body {
     display: flex;
     flex-direction: row;    
     align-items: center;
-    border-top:solid 2px rgb(103, 65, 136);
-    border-bottom: solid 2px rgb(103, 65, 136);
+    border-top:solid 2px #674188;
+    border-bottom: solid 2px #674188;
 }
 
 .navbar_element *, label{
@@ -118,7 +118,7 @@ body {
 }
 
 .navbar_element *:hover, label:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     cursor: pointer;
 }
 
@@ -159,8 +159,8 @@ body {
 }
 
 .deactivated, .deactivated:hover, .deactivated:active {
-    color: rgb(73, 65, 73);
-    background-color: rgb(247, 239, 229);
+    color: #494149;
+    background-color: #F7EFE5;
 }
 
 /*----------------Final del css de header---------------*/
@@ -193,7 +193,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    border: 5px solid rgb(103, 65, 136);
+    border: 5px solid #674188;
 }
 
 /* Column containing professor name and description */
@@ -207,7 +207,7 @@ body {
     font-weight: bold;
     margin-top: 1%;
     margin-left: 2%;
-    color: rgb(103, 65, 136);
+    color: #674188;
 }
 /* Professor description */
 .interview_subtitle {
@@ -217,7 +217,7 @@ body {
     text-justify: inter-word;
     margin-top: 1%;
     margin-left: 2%;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 /* Clear box */
@@ -231,7 +231,7 @@ body {
     padding-right: 10%;
     padding-bottom: 3%;
     border-radius: 0.5%;
-    background-color: rgb(255, 251, 245);
+    background-color: #FFFBF5;
 }
 
 /* Professor description box */
@@ -245,14 +245,14 @@ body {
     padding: 2%;
     float: right;
     border-radius: 10px;
-    border: 2px solid rgb(103, 65, 136);
-    background-color: rgb(192, 172, 208);
+    border: 2px solid #674188;
+    background-color: #C0ACD0;
 }
 
 /* Interview date of publication */
 .interview_date {
     font-weight: bold;
-    color: rgb(73, 65, 73);
+    color: #494149;
 }
 
 /* Interview text properties */
@@ -274,7 +274,7 @@ p { margin-bottom: 1%}
     margin-bottom: 2%;
     padding: 3%;
     border-radius: 10px;
-    background-color: rgb(255, 251, 245);
+    background-color: #FFFBF5;
 }
 
 /* Single button base */
@@ -284,23 +284,23 @@ p { margin-bottom: 1%}
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    background-color: rgb(192, 172, 208);
+    background-color: #C0ACD0;
     border-radius: 5px;
-    border: 2px solid rgb(103, 65, 136);
+    border: 2px solid #674188;
 }
 .-new {
-    box-shadow: 0px 0px 7px 0px  rgb(255, 200, 0);
+    box-shadow: 0px 0px 7px 0px  #FFC800;
 }
 /* Color changing while cursor hovers it and when clicked */
 .interview_button:hover, .interview_button:active {
-    background-color: rgb(247, 239, 229);
+    background-color: #F7EFE5;
 }
 
 /* Button image */
 .intbut_img {
     width: 8%;
     height: 8%;
-    border: 2px solid rgb(103, 65, 136);
+    border: 2px solid #674188;
     border-radius: 5px;
 }
 
@@ -324,7 +324,7 @@ p { margin-bottom: 1%}
     font-weight: bold;
     text-align: justify;
     text-justify: inter-word;
-    color: rgb(43, 41, 43);
+    color: #2B292B;
 }
 /* Adding a separation between professor name and description */
     /* Only mobile version */
@@ -337,18 +337,17 @@ p { margin-bottom: 1%}
     font-weight: bold;
     min-width: 200px;
     margin-left: 2%;
-    color: rgb(73, 65, 73);
+    color: #494149;
 }
 
 
-/* LINKS WITH ICONS / ABOUT US */
+/* LINKS WITH ICONS / SHARE BOX / ABOUT US */
 
 .link_icon {
     display: inline-flex;
     text-align: left;
     align-items: center;
     margin-top: 1%;
-    margin-right: auto;
 }
 .link_icon div {
     margin-left: 10px;
@@ -377,35 +376,94 @@ p { margin-bottom: 1%}
 .fa:hover {
     opacity: 0.7;
 }
+
 .fa-twitter {
-    background: rgb(85, 172, 238);
+    background: #55ACEE;
 }
+
 .fa-email {
-    background: rgb(80, 95, 95);
+    background: #505F5F;
 }
 .fa-email img {
     width: 16.5px;
     height: 16.5px;
 }
+
 .fa-telephone {
-    background: rgb(126, 71, 71);
+    background: #7E4747;
 }
 .fa-telephone img {
     width: 16.5px;
     height: 16.5px;
 }
+
 .fa-instagram {
-    background: rgb(234, 76, 137);
+    background: #EA4C89;
 }
+
 .fa-linkedin {
-    background: rgb(0, 123, 181);
+    background: #007BB5;
 }
+
 .fa-web {
-    background: rgb(110, 110, 110);
+    background: #6E6E6E;
 }
 .fa-web img {
     width: 16.5px;
     height: 16.5px;
+}
+
+.fa-whatsapp {
+    background: #25D366;
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+  
+.fa-google {
+    background: #dd4b39;
+}
+  
+.fa-youtube {
+    background: #bb0000;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-tumblr {
+    background: #2c4762;
+}
+
+.fa-reddit {
+    background: #ff5700;
+}
+
+.share_box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.share_box h3 {
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+.share_box div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.-margin {
+    margin: 5% 0;
 }
 
 
@@ -418,15 +476,15 @@ p { margin-bottom: 1%}
     display: relative;
     justify-content: space-between;
     align-items: center;
-    color: rgb(103, 65, 136);
+    color: #674188;
 }
 .bottom_buttons a:hover, .bottom_buttons a:active {
-    background-color: rgb(255, 251, 245);
+    background-color: #FFFBF5;
 }
 
 .previous_button, .next_button, .inici_button, .aboutus_button {
     width: 46%;
-    border: 2px solid rgb(103, 65, 136);
+    border: 2px solid #674188;
     border-radius: 5px;
     padding: 2%;
 }
@@ -452,6 +510,37 @@ p { margin-bottom: 1%}
 }
 
 
+/* AUTO-SCROLL BUTTONS */
+
+.to {
+    font-size: 150%;
+    font-weight: bold;
+    justify-content: center;
+    color: #674188;
+    width: 40px;
+    height: 40px;
+    right: 0%;
+    left: 100%;
+    margin-top: -40px;
+    margin-right: -30%;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    background-color: #FFFBF5;
+    border: 2px solid #674188;
+    border-radius: 25%;
+    cursor: pointer;
+}
+.to:hover {
+    background-color: #F7EFE5;
+}
+.-bottom {
+    bottom: 100px;
+}
+.-top {
+    bottom: 150px;
+}
+
 
 /* ------------------------------------------------- */
 
@@ -465,7 +554,7 @@ p { margin-bottom: 1%}
     body {
         margin-left: 5%;
         margin-right: 5%;
-        background-color: rgb(247, 239, 229);
+        background-color: #F7EFE5;
     }
 
     .box {
@@ -535,7 +624,7 @@ p { margin-bottom: 1%}
 
     /* Professor image */
     .interview_img {
-        border: 2px solid rgb(103, 65, 136);
+        border: 2px solid #674188;
     }
 
     /* Professor name */
@@ -614,6 +703,16 @@ p { margin-bottom: 1%}
     }
 
 
+    /* LINKS WITH ICONS / SHARE BOX / ABOUT US */
+
+    .link_icon a {
+        margin-right: 5px;
+    }
+    .link_icon div {
+        margin-left: 5px;
+    }
+
+
     /* MENU BAR ELEMENTS */
 
     .menu_button:hover .dropdown_menu {
@@ -623,24 +722,37 @@ p { margin-bottom: 1%}
     }
 
 
-    /* ABOUT US PAGE */
-
-    .link_icon {
-        font-size: 110%;
-    }
-    .link_icon a{
-        margin-right: 5px;
-    }
-    .link_icon div{
-        margin-left: 10PX;
-    }
-
-
     /* INTERVIEWS NEXT AND PREVIOUS BUTTONS */
 
     .previous_button, .next_button, .inici_button, .aboutus_button {
         font-size: 70%;
         width: 49.5%;
+    }
+
+
+    /* AUTO-SCROLL BUTTONS */
+
+    .to {
+        width: 30px;
+        height: 30px;
+        right: 0%;
+        left: 100%;
+        margin-top: -30px;
+        margin-right: 0;
+        position: sticky;
+        background-color: #FFFBF5;
+        border: 2px solid #674188;
+        border-radius: 25%;
+        cursor: pointer;
+    }
+    .to:hover {
+        background-color: #FFFBF5;
+    }
+    .-bottom {
+        bottom: 65px;
+    }
+    .-top {
+        bottom: 97px;
     }
 
 }
