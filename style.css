@@ -471,7 +471,9 @@ p { margin-bottom: 1%}
 
 .bottom_buttons {
     width: 70%;
-    margin: 5% auto;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
     overflow: hidden;
     display: relative;
     justify-content: space-between;
@@ -522,7 +524,8 @@ p { margin-bottom: 1%}
     right: 0%;
     left: 100%;
     margin-top: -40px;
-    margin-right: -30%;
+    margin-right: 3%;
+    position: -webkit-sticky;
     position: sticky;
     display: flex;
     align-items: center;
@@ -724,6 +727,10 @@ p { margin-bottom: 1%}
 
     /* INTERVIEWS NEXT AND PREVIOUS BUTTONS */
 
+    .bottom_buttons {
+        margin: 5% auto;
+    }
+
     .previous_button, .next_button, .inici_button, .aboutus_button {
         font-size: 70%;
         width: 49.5%;
@@ -735,18 +742,8 @@ p { margin-bottom: 1%}
     .to {
         width: 30px;
         height: 30px;
-        right: 0%;
-        left: 100%;
         margin-top: -30px;
-        margin-right: 0;
-        position: sticky;
-        background-color: #FFFBF5;
-        border: 2px solid #674188;
-        border-radius: 25%;
-        cursor: pointer;
-    }
-    .to:hover {
-        background-color: #FFFBF5;
+        margin-right: 0px;
     }
     .-bottom {
         bottom: 65px;
