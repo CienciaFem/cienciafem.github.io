@@ -418,7 +418,7 @@ p { margin-bottom: 1%}
     background: #25D366;
     display: none !important;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     .fa-whatsapp {
     display: block !important;
 }
