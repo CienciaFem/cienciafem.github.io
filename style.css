@@ -367,7 +367,6 @@ p { margin-bottom: 1%}
     height: 36px;
     text-align: center;
     align-items: center;
-    display: block;
     padding: 10px;
     border-radius: 50%;
     text-decoration: none;
@@ -474,7 +473,8 @@ p { margin-bottom: 1%}
     margin-bottom: 1%;
 }
 .share_box div {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 .-margin {
