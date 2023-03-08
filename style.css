@@ -367,6 +367,7 @@ p { margin-bottom: 1%}
     height: 36px;
     text-align: center;
     align-items: center;
+    display: block;
     padding: 10px;
     border-radius: 50%;
     text-decoration: none;
@@ -417,6 +418,20 @@ p { margin-bottom: 1%}
 .fa-whatsapp {
     background: #25D366;
 }
+.-desktop a {
+    display: block;
+}
+.-media a {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .-desktop a {
+        display: none;
+    }
+    .-media a {
+        display: block;
+    }
+}
 
 .fa-facebook {
     background: #3B5998;
@@ -459,8 +474,7 @@ p { margin-bottom: 1%}
     margin-bottom: 1%;
 }
 .share_box div {
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
     align-items: center;
 }
 .-margin {
